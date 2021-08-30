@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Staatliches&display=swap');
+
+$green-color: rgb(72, 255, 160);
+$off-white: rgb(201, 201, 201);
+
+html, body {
+    box-sizing: border-box;
+    font-family: Raleway, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding-top: 1rem;
+    padding-left: 2rem;
+    font-family: Staatliches;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    background-color: #22262a;
+    color: rgb(201, 201, 201);
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            padding-right: 2rem;
+        }
+    }
+}
+
+
+.intro-container {
+    background-color: #22262a;
+    height: 95vh;
+    font-family: Staatliches;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 5em;
+  
+    span {
+        color:$green-color;
+    }
+
+    .name-title {
+
+        margin: auto;
+        text-align: left;
+        position: relative;
+        padding: 0;
+
+        
+
+        #hey{
+            text-align: left;
+            padding-bottom: 0;
+            color: $off-white;
+            font-size: 4rem;
+            margin-bottom: 0;
+        }
+
+        h1 {
+            
+            color: $off-white;
+            font-size: 6rem;
+            margin: 0;
+        }
+    }
+
+    h2 {
+        color:$off-white;
+        margin: 0;
+        padding: 0;
+        font-size: 1.75rem;
+
+
+        #and {
+            color: $green-color;
+        }
+    }
+
+}
