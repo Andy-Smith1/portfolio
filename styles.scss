@@ -2,12 +2,14 @@
 
 $green-color: rgb(72, 255, 160);
 $off-white: rgb(201, 201, 201);
+$background: #22262a;
 
 html, body {
     box-sizing: border-box;
     font-family: Raleway, sans-serif;
     margin: 0;
     padding: 0;
+    
 }
 
 header {
@@ -35,25 +37,22 @@ header {
 
 .intro-container {
     background-color: #22262a;
-    height: 95vh;
     font-family: Staatliches;
     display:flex;
     justify-content: center;
     flex-direction: column;
     line-height: 5em;
+
+    padding: 8rem 2rem 5rem 2rem;
   
     span {
         color:$green-color;
     }
 
     .name-title {
-
         margin: auto;
         text-align: left;
-        position: relative;
         padding: 0;
-
-        
 
         #hey{
             text-align: left;
@@ -64,7 +63,6 @@ header {
         }
 
         h1 {
-            
             color: $off-white;
             font-size: 6rem;
             margin: 0;
@@ -77,10 +75,37 @@ header {
         padding: 0;
         font-size: 1.75rem;
 
-
         #and {
             color: $green-color;
         }
     }
 
+    
+    .section-buttons {
+        display: flex;
+        margin: 0 auto 0 auto;
+        padding: 0;
+        
+        button{
+            font-family: Staatliches;
+            font-size: 1.25em;
+            justify-content: flex-start;
+            // background-color: $background;
+            // color: $green-color;
+            // border: 1px solid $green-color;
+            background-color: $green-color;
+            color: $background;
+            border: 1px solid $background;
+            margin-right: 1em;
+            padding: 0.5rem 1rem 0.5rem 1rem;
+            border-radius: 15px;
+        }
+
+        button:hover{
+            background-color: $background;
+            color: $green-color;
+            border: 1px solid $green-color;
+            cursor: pointer;
+        }
+    }
 }

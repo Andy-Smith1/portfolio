@@ -37,7 +37,6 @@ header ul li {
 
 .intro-container {
   background-color: #22262a;
-  height: 95vh;
   font-family: Staatliches;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,6 +49,7 @@ header ul li {
       -ms-flex-direction: column;
           flex-direction: column;
   line-height: 5em;
+  padding: 8rem 2rem 5rem 2rem;
 }
 
 .intro-container span {
@@ -59,7 +59,6 @@ header ul li {
 .intro-container .name-title {
   margin: auto;
   text-align: left;
-  position: relative;
   padding: 0;
 }
 
@@ -86,5 +85,34 @@ header ul li {
 
 .intro-container h2 #and {
   color: #48ffa0;
+}
+
+.intro-container .section-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto 0 auto;
+  padding: 0;
+}
+
+.intro-container .section-buttons button {
+  font-family: Staatliches;
+  font-size: 1.25em;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #48ffa0;
+  color: #22262a;
+  border: 1px solid #22262a;
+  margin-right: 1em;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 15px;
+}
+
+.intro-container .section-buttons button:hover {
+  background-color: #22262a;
+  color: #48ffa0;
+  border: 1px solid #48ffa0;
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */
