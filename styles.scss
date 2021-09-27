@@ -1,111 +1,162 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Staatliches&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Staatliches&display=swap");
 
-$green-color: rgb(72, 255, 160);
+$green-color: rgb(72, 255, 154);
 $off-white: rgb(201, 201, 201);
 $background: #22262a;
 
-html, body {
-    box-sizing: border-box;
-    font-family: Raleway, sans-serif;
-    margin: 0;
-    padding: 0;
-    
+html,
+body {
+  box-sizing: border-box;
+  font-family: Raleway, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2a2f34;
+  color: $off-white;
 }
 
 header {
-    padding-top: 1rem;
-    padding-left: 2rem;
-    font-family: Staatliches;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  font-family: Staatliches;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25rem;
+  background-color: #22262a;
+  color: rgb(201, 201, 201);
+
+  ul {
     display: flex;
-    justify-content: space-between;
-    font-size: 1.25rem;
-    background-color: #22262a;
-    color: rgb(201, 201, 201);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 
-    ul {
-        display: flex;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-
-        li {
-            padding-right: 2rem;
-        }
+    li {
+      padding-right: 2rem;
     }
+  }
 }
 
-
 .intro-container {
-    background-color: #22262a;
+  background-color: #22262a;
+  font-family: Staatliches;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 5em;
+
+  padding: 8rem 2rem 5rem 2rem;
+
+  span {
+    color: $green-color;
+  }
+
+  #name-title {
+    margin: auto;
+    text-align: left;
+    padding: 0;
+
+    #hey {
+      text-align: left;
+      padding-bottom: 1.5rem;
+      color: $off-white;
+      font-size: 6rem;
+      margin-bottom: 0;
+    }
+
+    h1 {
+      color: $off-white;
+      font-size: 8rem;
+      margin: 0;
+    }
+  }
+
+  h2 {
+    color: $off-white;
+    margin: 0;
+    padding: 0;
+    font-size: 1.75rem;
+
+    #and {
+      color: $green-color;
+    }
+  }
+
+  .section-buttons {
+    display: flex;
+    margin: 0 auto 0 auto;
+    padding: 0;
+    align-items: center;
+
+    i {
+      font-size: 2.5rem;
+      color: $green-color;
+    }
+
+    button {
+      font-family: Staatliches;
+      font-size: 1.25em;
+      justify-content: flex-start;
+      background-color: $background;
+      color: $green-color;
+      border: 1px solid $green-color;
+      margin-right: 1em;
+      padding: 0.5rem 1rem 0.5rem 1rem;
+      border-radius: 15px;
+    }
+
+    button:hover {
+      background-color: $green-color;
+      color: $background;
+      border: 1px solid $green-color;
+      cursor: pointer;
+    }
+  }
+  svg {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  h3 {
     font-family: Staatliches;
-    display:flex;
+    text-align: center;
+    font-size: 4.5rem;
+    padding: 0;
+    margin: 0;
+    text-decoration: underline $green-color;
+  }
+
+  .about-para {
     justify-content: center;
-    flex-direction: column;
-    line-height: 5em;
+    margin: auto;
+    padding: 1.5em;
+  }
+  p {
+    max-width: 60ch;
+    text-align: left;
+    font-size: 1.25rem;
+    font-weight: bolder;
+  }
+}
 
-    padding: 8rem 2rem 5rem 2rem;
-  
-    span {
-        color:$green-color;
-    }
+.skills-container {
+  padding-top: 2em;
+  max-width: 60ch;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  grid-row-gap: 3em;
+  margin: auto;
 
-    .name-title {
-        margin: auto;
-        text-align: left;
-        padding: 0;
-
-        #hey{
-            text-align: left;
-            padding-bottom: 0;
-            color: $off-white;
-            font-size: 4rem;
-            margin-bottom: 0;
-        }
-
-        h1 {
-            color: $off-white;
-            font-size: 6rem;
-            margin: 0;
-        }
-    }
-
-    h2 {
-        color:$off-white;
-        margin: 0;
-        padding: 0;
-        font-size: 1.75rem;
-
-        #and {
-            color: $green-color;
-        }
-    }
-
-    
-    .section-buttons {
-        display: flex;
-        margin: 0 auto 0 auto;
-        padding: 0;
-        
-        button{
-            font-family: Staatliches;
-            font-size: 1.25em;
-            justify-content: flex-start;
-            // background-color: $background;
-            // color: $green-color;
-            // border: 1px solid $green-color;
-            background-color: $green-color;
-            color: $background;
-            border: 1px solid $background;
-            margin-right: 1em;
-            padding: 0.5rem 1rem 0.5rem 1rem;
-            border-radius: 15px;
-        }
-
-        button:hover{
-            background-color: $background;
-            color: $green-color;
-            border: 1px solid $green-color;
-            cursor: pointer;
-        }
-    }
+  i {
+    text-align: center;
+    color: $green-color;
+    font-size: 5rem;
+  }
 }

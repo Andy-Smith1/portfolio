@@ -1,10 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Staatliches&display=swap");
-html, body {
+html,
+body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: Raleway, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #2a2f34;
+  color: #c9c9c9;
 }
 
 header {
@@ -53,26 +56,26 @@ header ul li {
 }
 
 .intro-container span {
-  color: #48ffa0;
+  color: #48ff9a;
 }
 
-.intro-container .name-title {
+.intro-container #name-title {
   margin: auto;
   text-align: left;
   padding: 0;
 }
 
-.intro-container .name-title #hey {
+.intro-container #name-title #hey {
   text-align: left;
-  padding-bottom: 0;
+  padding-bottom: 1.5rem;
   color: #c9c9c9;
-  font-size: 4rem;
+  font-size: 6rem;
   margin-bottom: 0;
 }
 
-.intro-container .name-title h1 {
+.intro-container #name-title h1 {
   color: #c9c9c9;
-  font-size: 6rem;
+  font-size: 8rem;
   margin: 0;
 }
 
@@ -84,7 +87,7 @@ header ul li {
 }
 
 .intro-container h2 #and {
-  color: #48ffa0;
+  color: #48ff9a;
 }
 
 .intro-container .section-buttons {
@@ -93,6 +96,14 @@ header ul li {
   display: flex;
   margin: 0 auto 0 auto;
   padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro-container .section-buttons i {
+  font-size: 2.5rem;
+  color: #48ff9a;
 }
 
 .intro-container .section-buttons button {
@@ -101,18 +112,81 @@ header ul li {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  background-color: #48ffa0;
-  color: #22262a;
-  border: 1px solid #22262a;
+  background-color: #22262a;
+  color: #48ff9a;
+  border: 1px solid #48ff9a;
   margin-right: 1em;
   padding: 0.5rem 1rem 0.5rem 1rem;
   border-radius: 15px;
 }
 
 .intro-container .section-buttons button:hover {
-  background-color: #22262a;
-  color: #48ffa0;
-  border: 1px solid #48ffa0;
+  background-color: #48ff9a;
+  color: #22262a;
+  border: 1px solid #48ff9a;
   cursor: pointer;
+}
+
+.intro-container svg {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.about-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about-section h3 {
+  font-family: Staatliches;
+  text-align: center;
+  font-size: 4.5rem;
+  padding: 0;
+  margin: 0;
+  -webkit-text-decoration: underline #48ff9a;
+          text-decoration: underline #48ff9a;
+}
+
+.about-section .about-para {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  padding: 1.5em;
+}
+
+.about-section p {
+  max-width: 60ch;
+  text-align: left;
+  font-size: 1.25rem;
+  font-weight: bolder;
+}
+
+.skills-container {
+  padding-top: 2em;
+  max-width: 60ch;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  grid-row-gap: 3em;
+  margin: auto;
+}
+
+.skills-container i {
+  text-align: center;
+  color: #48ff9a;
+  font-size: 5rem;
 }
 /*# sourceMappingURL=styles.css.map */
