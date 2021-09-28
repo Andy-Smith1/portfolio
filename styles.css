@@ -8,6 +8,7 @@ body {
   padding: 0;
   background-color: #2a2f34;
   color: #c9c9c9;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -34,6 +35,11 @@ header ul {
   padding: 0;
 }
 
+header ul a {
+  color: #c9c9c9;
+  text-decoration: none;
+}
+
 header ul li {
   padding-right: 2rem;
 }
@@ -56,7 +62,7 @@ header ul li {
 }
 
 .intro-container span {
-  color: #48ff9a;
+  color: #48ffd4;
 }
 
 .intro-container #name-title {
@@ -87,7 +93,7 @@ header ul li {
 }
 
 .intro-container h2 #and {
-  color: #48ff9a;
+  color: #48ffd4;
 }
 
 .intro-container .section-buttons {
@@ -101,9 +107,15 @@ header ul li {
           align-items: center;
 }
 
+.intro-container .section-buttons a {
+  text-decoration: none;
+  line-height: 0px;
+}
+
 .intro-container .section-buttons i {
   font-size: 2.5rem;
-  color: #48ff9a;
+  color: #48ffd4;
+  padding-right: 1rem;
 }
 
 .intro-container .section-buttons button {
@@ -113,17 +125,17 @@ header ul li {
       -ms-flex-pack: start;
           justify-content: flex-start;
   background-color: #22262a;
-  color: #48ff9a;
-  border: 1px solid #48ff9a;
+  color: #48ffd4;
+  border: 1px solid #48ffd4;
   margin-right: 1em;
   padding: 0.5rem 1rem 0.5rem 1rem;
   border-radius: 15px;
 }
 
 .intro-container .section-buttons button:hover {
-  background-color: #48ff9a;
+  background-color: #48ffd4;
   color: #22262a;
-  border: 1px solid #48ff9a;
+  border: 1px solid #48ffd4;
   cursor: pointer;
 }
 
@@ -151,8 +163,8 @@ header ul li {
   font-size: 4.5rem;
   padding: 0;
   margin: 0;
-  -webkit-text-decoration: underline #48ff9a;
-          text-decoration: underline #48ff9a;
+  -webkit-text-decoration: underline #48ffd4;
+          text-decoration: underline #48ffd4;
 }
 
 .about-section .about-para {
@@ -160,17 +172,28 @@ header ul li {
       -ms-flex-pack: center;
           justify-content: center;
   margin: auto;
-  padding: 1.5em;
+  padding: 2em 1.5em 2em 1.5em;
 }
 
 .about-section p {
-  max-width: 60ch;
+  max-width: 75ch;
   text-align: left;
   font-size: 1.25rem;
   font-weight: bolder;
 }
 
-.skills-container {
+.skills-section h3 {
+  font-family: Staatliches;
+  text-align: center;
+  font-size: 4.5rem;
+  padding: 0;
+  margin: 0;
+  -webkit-text-decoration: underline #48ffd4;
+          text-decoration: underline #48ffd4;
+  padding: 0.5em 0 0.5em 0;
+}
+
+.skills-section .skills-grid {
   padding-top: 2em;
   max-width: 60ch;
   display: -ms-grid;
@@ -184,9 +207,42 @@ header ul li {
   margin: auto;
 }
 
-.skills-container i {
+.skills-section .skills-grid div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
-  color: #48ff9a;
-  font-size: 5rem;
+  font-weight: bold;
+}
+
+.skills-section .skills-grid i {
+  text-align: center;
+  color: #48ffd4;
+  font-size: 4rem;
+  padding: 10px;
+}
+
+.projects-section {
+  margin-top: -5px;
+  padding: 0;
+  background-color: #22262a;
+}
+
+.projects-section h3 {
+  font-family: Staatliches;
+  text-align: center;
+  font-size: 4.5rem;
+  padding: 0;
+  margin: 0;
+  -webkit-text-decoration: underline #48ffd4;
+          text-decoration: underline #48ffd4;
+  padding: 0.7em;
 }
 /*# sourceMappingURL=styles.css.map */

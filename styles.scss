@@ -1,8 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Staatliches&display=swap");
 
-$green-color: rgb(72, 255, 154);
+$green-color: rgb(72, 255, 212);
 $off-white: rgb(201, 201, 201);
 $background: #22262a;
+@mixin section-headers {
+  font-family: Staatliches;
+  text-align: center;
+  font-size: 4.5rem;
+  padding: 0;
+  margin: 0;
+  text-decoration: underline $green-color;
+}
 
 html,
 body {
@@ -12,6 +20,7 @@ body {
   padding: 0;
   background-color: #2a2f34;
   color: $off-white;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -29,6 +38,11 @@ header {
     list-style-type: none;
     margin: 0;
     padding: 0;
+
+    a {
+      color: $off-white;
+      text-decoration: none;
+    }
 
     li {
       padding-right: 2rem;
@@ -87,9 +101,14 @@ header {
     padding: 0;
     align-items: center;
 
+    a {
+      text-decoration: none;
+      line-height: 0px;
+    }
     i {
       font-size: 2.5rem;
       color: $green-color;
+      padding-right: 1rem;
     }
 
     button {
@@ -123,40 +142,62 @@ header {
   flex-direction: column;
 
   h3 {
-    font-family: Staatliches;
-    text-align: center;
-    font-size: 4.5rem;
-    padding: 0;
-    margin: 0;
-    text-decoration: underline $green-color;
+    @include section-headers;
   }
 
   .about-para {
     justify-content: center;
     margin: auto;
-    padding: 1.5em;
+    padding: 2em 1.5em 2em 1.5em;
   }
   p {
-    max-width: 60ch;
+    max-width: 75ch;
     text-align: left;
     font-size: 1.25rem;
     font-weight: bolder;
   }
 }
 
-.skills-container {
-  padding-top: 2em;
-  max-width: 60ch;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 1em;
-  grid-row-gap: 3em;
-  margin: auto;
+.skills-section {
+  h3 {
+    @include section-headers;
+    padding: 0.5em 0 0.5em 0;
+  }
 
-  i {
-    text-align: center;
-    color: $green-color;
-    font-size: 5rem;
+  .skills-grid {
+    padding-top: 2em;
+    max-width: 60ch;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    grid-row-gap: 3em;
+    margin: auto;
+
+    div {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    i {
+      text-align: center;
+      color: $green-color;
+      font-size: 4rem;
+      padding: 10px;
+    }
+  }
+}
+
+.projects-section {
+  margin-top: -5px;
+  padding: 0;
+  background-color: $background;
+
+  h3 {
+    @include section-headers;
+    padding: 0.7em;
   }
 }
