@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&family=Staatliches&display=swap");
 html,
 body {
   -webkit-box-sizing: border-box;
@@ -233,6 +233,19 @@ header ul li {
   margin-top: -5px;
   padding: 0;
   background-color: #22262a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .projects-section h3 {
@@ -244,5 +257,69 @@ header ul li {
   -webkit-text-decoration: underline #48ffd4;
           text-decoration: underline #48ffd4;
   padding: 0.7em;
+}
+
+.projects-section .projects-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1000px;
+  position: relative;
+  margin: 1em;
+  padding-top: 2em;
+}
+
+.projects-section .projects-card .projects-description {
+  padding-left: 1em;
+}
+
+.projects-section .projects-card img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 0 0 10px #0e0e0e;
+          box-shadow: 0 0 10px #0e0e0e;
+  border-radius: 10px;
+}
+
+.projects-section .projects-card h4 {
+  padding: 1ch;
+  margin: 0;
+  color: #c9c9c9;
+  text-transform: uppercase;
+  font-family: Staatliches;
+  font-size: 1.5rem;
+  -webkit-text-decoration: underline #48ffd4;
+          text-decoration: underline #48ffd4;
+}
+
+.projects-section .projects-card p {
+  padding: 1ch;
+  margin: 0;
+}
+
+.projects-section .projects-card ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 1ch;
+}
+
+.projects-section .projects-card ul li {
+  margin-right: 1ch;
+  color: #48ffd4;
+  border: 1px solid #48ffd4;
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.projects-section .projects-card i {
+  padding: 10px;
+  font-size: 2rem;
+  color: #48ffd4;
 }
 /*# sourceMappingURL=styles.css.map */

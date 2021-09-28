@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&family=Staatliches&display=swap");
 
 $green-color: rgb(72, 255, 212);
 $off-white: rgb(201, 201, 201);
 $background: #22262a;
+$light-bg: #2a2f34;
 @mixin section-headers {
   font-family: Staatliches;
   text-align: center;
@@ -195,9 +196,67 @@ header {
   margin-top: -5px;
   padding: 0;
   background-color: $background;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   h3 {
     @include section-headers;
     padding: 0.7em;
+  }
+
+  .projects-card {
+    display: flex;
+    max-width: 1000px;
+    position: relative;
+    margin: 1em;
+    padding-top: 2em;
+
+    .projects-description {
+      padding-left: 1em;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      box-shadow: 0 0 10px rgb(14, 14, 14);
+      border-radius: 10px;
+    }
+
+    h4 {
+      padding: 1ch;
+      margin: 0;
+      color: $off-white;
+      text-transform: uppercase;
+      font-family: Staatliches;
+      font-size: 1.5rem;
+      text-decoration: underline $green-color;
+    }
+    p {
+      padding: 1ch;
+      margin: 0;
+    }
+
+    ul {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 1ch;
+
+      li {
+        margin-right: 1ch;
+        color: $green-color;
+        border: 1px solid $green-color;
+        font-weight: 600;
+        padding: 5px;
+        border-radius: 10px;
+      }
+    }
+    i {
+      padding: 10px;
+      font-size: 2rem;
+      color: $green-color;
+    }
   }
 }
