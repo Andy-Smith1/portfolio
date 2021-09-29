@@ -526,4 +526,21 @@ nav .toggle-button .bar {
   background-color: #48ffd4;
   cursor: pointer;
 }
+
+footer {
+  padding: 3em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+footer div {
+  padding-bottom: 1em;
+}
+
+footer i {
+  padding-right: 1em;
+  color: #c9c9c9;
+}
 /*# sourceMappingURL=styles.css.map */

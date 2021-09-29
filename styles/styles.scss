@@ -412,3 +412,16 @@ nav {
     }
   }
 }
+
+footer {
+  padding: 3em;
+  justify-content: center;
+  text-align: center;
+  div {
+    padding-bottom: 1em;
+  }
+  i {
+    padding-right: 1em;
+    color: $off-white;
+  }
+}
