@@ -4,6 +4,7 @@ $green-color: rgb(72, 255, 212);
 $off-white: rgb(201, 201, 201);
 $background: #22262a;
 $light-bg: #2a2f34;
+
 @mixin section-headers {
   font-family: Staatliches;
   text-align: center;
@@ -22,6 +23,7 @@ body {
   background-color: #2a2f34;
   color: $off-white;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 header {
@@ -34,16 +36,16 @@ header {
   background-color: #22262a;
   color: rgb(201, 201, 201);
 
+  a {
+    color: $off-white;
+    text-decoration: none;
+  }
+
   ul {
     display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
-
-    a {
-      color: $off-white;
-      text-decoration: none;
-    }
 
     li {
       padding-right: 2rem;
@@ -57,12 +59,12 @@ header {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  line-height: 5em;
-
+  // line-height: 5em;
   padding: 8rem 2rem 5rem 2rem;
 
   span {
     color: $green-color;
+    height: 80px;
   }
 
   #name-title {
@@ -72,23 +74,25 @@ header {
 
     #hey {
       text-align: left;
-      padding-bottom: 1.5rem;
+      // padding-bottom: 1.5rem;
       color: $off-white;
       font-size: 6rem;
-      margin-bottom: 0;
+      // margin-bottom: 0;
+      // line-height: 40px;
     }
 
     h1 {
       color: $off-white;
       font-size: 8rem;
       margin: 0;
+      line-height: 130px;
     }
   }
 
   h2 {
     color: $off-white;
     margin: 0;
-    padding: 0;
+    padding: 1rem 0 1rem 0;
     font-size: 1.75rem;
 
     #and {
@@ -99,7 +103,7 @@ header {
   .section-buttons {
     display: flex;
     margin: 0 auto 0 auto;
-    padding: 0;
+    padding: 1rem 0 1rem 0;
     align-items: center;
 
     a {
@@ -211,7 +215,7 @@ header {
     max-width: 1000px;
     position: relative;
     margin: 1em;
-    padding-top: 2em;
+    padding: 1.5em;
 
     .projects-description {
       padding-left: 1em;
@@ -269,6 +273,17 @@ header {
       font-size: 2rem;
       color: $green-color;
     }
+  }
+}
+
+@media (max-width: 1000px) {
+  .projects-card {
+    flex-direction: column;
+  }
+  .projects-description {
+    height: 100%;
+    width: 90%;
+    border-radius: 10px;
   }
 }
 
