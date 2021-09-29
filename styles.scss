@@ -271,3 +271,59 @@ header {
     }
   }
 }
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h3 {
+    @include section-headers;
+  }
+  form {
+    width: 300px;
+    padding: 4em;
+    font-weight: 600;
+  }
+  label {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0 1em 0;
+  }
+  input {
+    height: 30px;
+    font-size: 1rem;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: $off-white;
+    border: none;
+    padding: 0 1em 0 1em;
+    &:focus {
+      outline: none;
+    }
+  }
+  textarea {
+    height: 100px;
+    resize: none;
+    font-family: Raleway;
+    font-size: 1rem;
+    margin-top: 5px;
+    border-radius: 5px;
+    outline: none;
+    background-color: $off-white;
+    border: none;
+    padding: 0.5em 1em 0.5em 1em;
+  }
+  button {
+    padding: 1ch 2ch 1ch 2ch;
+    background-color: $light-bg;
+    border: 1px solid $green-color;
+    color: $green-color;
+    border-radius: 10px;
+    &:hover {
+      color: $background;
+      background-color: $green-color;
+      cursor: pointer;
+    }
+  }
+}

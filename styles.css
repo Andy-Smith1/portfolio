@@ -333,4 +333,88 @@ header ul li {
   font-size: 2rem;
   color: #48ffd4;
 }
+
+.contact-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-section h3 {
+  font-family: Staatliches;
+  text-align: center;
+  font-size: 4.5rem;
+  padding: 0;
+  margin: 0;
+  -webkit-text-decoration: underline #48ffd4;
+          text-decoration: underline #48ffd4;
+}
+
+.contact-section form {
+  width: 300px;
+  padding: 4em;
+  font-weight: 600;
+}
+
+.contact-section label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1em 0 1em 0;
+}
+
+.contact-section input {
+  height: 30px;
+  font-size: 1rem;
+  margin-top: 5px;
+  border-radius: 5px;
+  background-color: #c9c9c9;
+  border: none;
+  padding: 0 1em 0 1em;
+}
+
+.contact-section input:focus {
+  outline: none;
+}
+
+.contact-section textarea {
+  height: 100px;
+  resize: none;
+  font-family: Raleway;
+  font-size: 1rem;
+  margin-top: 5px;
+  border-radius: 5px;
+  outline: none;
+  background-color: #c9c9c9;
+  border: none;
+  padding: 0.5em 1em 0.5em 1em;
+}
+
+.contact-section button {
+  padding: 1ch 2ch 1ch 2ch;
+  background-color: #2a2f34;
+  border: 1px solid #48ffd4;
+  color: #48ffd4;
+  border-radius: 10px;
+}
+
+.contact-section button:hover {
+  color: #22262a;
+  background-color: #48ffd4;
+  cursor: pointer;
+}
 /*# sourceMappingURL=styles.css.map */
