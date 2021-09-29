@@ -271,6 +271,17 @@ header ul li {
 
 .projects-section .projects-card .projects-description {
   padding-left: 1em;
+  height: 90%;
+  background-color: #2a2f34;
+  margin: auto;
+  -webkit-box-shadow: 0 0 10px #151515;
+          box-shadow: 0 0 10px #151515;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.projects-section .projects-card .img-div {
+  z-index: 1;
 }
 
 .projects-section .projects-card img {

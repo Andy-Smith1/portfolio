@@ -215,7 +215,18 @@ header {
 
     .projects-description {
       padding-left: 1em;
+      height: 90%;
+      background-color: $light-bg;
+      margin: auto;
+      box-shadow: 0 0 10px rgb(21, 21, 21);
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
     }
+
+    .img-div {
+      z-index: 1;
+    }
+
     img {
       width: 100%;
       height: auto;
