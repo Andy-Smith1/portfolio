@@ -297,11 +297,16 @@ nav {
     }
 
     img {
-      width: 100%;
+      width: 450px;
       height: auto;
       object-fit: cover;
       box-shadow: 0 0 10px rgb(14, 14, 14);
       border-radius: 10px;
+    }
+    @media (max-width: 800px) {
+      img {
+        width: 100%;
+      }
     }
 
     h4 {
@@ -341,12 +346,12 @@ nav {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   .projects-card {
     flex-direction: column;
   }
   .projects-description {
-    height: 100%;
+    height: auto;
     width: 90%;
     border-radius: 10px;
   }

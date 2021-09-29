@@ -374,13 +374,19 @@ nav .toggle-button .bar {
 }
 
 .projects-section .projects-card img {
-  width: 100%;
+  width: 450px;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-box-shadow: 0 0 10px #0e0e0e;
           box-shadow: 0 0 10px #0e0e0e;
   border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .projects-section .projects-card img {
+    width: 100%;
+  }
 }
 
 .projects-section .projects-card h4 {
@@ -423,7 +429,7 @@ nav .toggle-button .bar {
   color: #48ffd4;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   .projects-card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -431,7 +437,7 @@ nav .toggle-button .bar {
             flex-direction: column;
   }
   .projects-description {
-    height: 100%;
+    height: auto;
     width: 90%;
     border-radius: 10px;
   }
