@@ -124,7 +124,6 @@ nav {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  // line-height: 5em;
   padding: 8rem 2rem 5rem 2rem;
 
   span {
@@ -139,11 +138,8 @@ nav {
 
     #hey {
       text-align: left;
-      // padding-bottom: 1.5rem;
       color: $off-white;
       font-size: 6rem;
-      // margin-bottom: 0;
-      // line-height: 40px;
     }
 
     h1 {
@@ -221,7 +217,7 @@ nav {
     padding: 2em 1.5em 2em 1.5em;
   }
   p {
-    max-width: 75ch;
+    max-width: 55ch;
     text-align: left;
     font-size: 1.25rem;
     font-weight: bolder;
