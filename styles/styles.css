@@ -374,7 +374,7 @@ nav .toggle-button .bar {
 }
 
 .projects-section .projects-card img {
-  width: 450px;
+  width: 500px;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
@@ -409,6 +409,8 @@ nav .toggle-button .bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
   padding: 1ch;
@@ -416,6 +418,7 @@ nav .toggle-button .bar {
 
 .projects-section .projects-card ul li {
   margin-right: 1ch;
+  margin-top: 1ch;
   color: #48ffd4;
   border: 1px solid #48ffd4;
   font-weight: 600;
